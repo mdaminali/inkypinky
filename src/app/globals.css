@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --pinky-primary: #ff5ca8;
+  --pinky-deep: #e62884;
+  --pinky-soft: #ffd6e9;
+  --pinky-blush: #fff4f9;
+  --pinky-gold: #f5b73b;
+  --pinky-ink: #3d112a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--pinky-blush);
+  color: var(--pinky-ink);
+  font-family: var(--font-nunito), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-fredoka), system-ui, sans-serif;
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.animate-pop-in {
+  animation: popIn 0.24s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.pinky-shadow {
+  box-shadow: 0 18px 42px -14px rgba(230, 40, 132, 0.28);
+}
+
+.pinky-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 92, 168, 0.18);
+  box-shadow: 0 12px 32px -12px rgba(230, 40, 132, 0.16);
+}
