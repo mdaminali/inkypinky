@@ -1,17 +1,21 @@
 import type { Metadata } from "next";
-import { Fredoka, Nunito } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const fredoka = Fredoka({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+// Fonts are self-hosted (latin subset, variable weight) so the build never
+// depends on reaching Google Fonts at build time.
+const fredoka = localFont({
+  src: "./fonts/fredoka-latin-variable.woff2",
+  weight: "400 700",
+  style: "normal",
   variable: "--font-fredoka",
   display: "swap",
 });
 
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+const nunito = localFont({
+  src: "./fonts/nunito-latin-variable.woff2",
+  weight: "400 800",
+  style: "normal",
   variable: "--font-nunito",
   display: "swap",
 });
