@@ -9,7 +9,7 @@ import {
   YouTubeIcon,
 } from "./SocialIcons";
 
-export type UpcomingPlatform = "youtube" | "instagram" | "tiktok";
+export type UpcomingPlatform = "instagram" | "tiktok";
 
 interface ComingSoonModalProps {
   platform: UpcomingPlatform | null;
@@ -27,15 +27,6 @@ const PLATFORM_INFO: Record<
     icon: React.ReactNode;
   }
 > = {
-  youtube: {
-    name: "YouTube",
-    headline: "YouTube Page — Upcoming Soon!",
-    message:
-      "Pinky is polishing her paws and practicing her best dance moves for YouTube Shorts and full cute adventures! Subscribe will be open very soon.",
-    accentBg: "bg-[#FF0033]/12 border-[#FF0033]/25",
-    accentText: "text-[#D9002B]",
-    icon: <YouTubeIcon className="w-6 h-6" />,
-  },
   instagram: {
     name: "Instagram",
     headline: "Instagram Page — Upcoming Soon!",
@@ -129,24 +120,37 @@ export function ComingSoonModal({ platform, onClose }: ComingSoonModalProps) {
             <Sparkles className="w-4 h-4" />
             Can&apos;t wait to see Pinky?
           </span>{" "}
-          Watch Pinky&apos;s latest reels right now on our live Facebook page!
+          Watch Pinky&apos;s latest reels right now on our live Facebook &amp;
+          YouTube pages!
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-3">
-          <a
-            href="https://fb.com/inkypinkycat"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#FF5CA8] to-[#E62884] px-5 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#FF5CA8]/30 hover:brightness-105 transition-all"
-          >
-            <FacebookIcon className="w-4 h-4" />
-            <span>Follow on Facebook</span>
-            <ExternalLink className="w-3.5 h-3.5 opacity-90" />
-          </a>
+        <div className="flex flex-col gap-2.5">
+          <div className="flex flex-col sm:flex-row gap-2.5">
+            <a
+              href="https://fb.com/inkypinkycat"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#FF5CA8] to-[#E62884] px-5 py-3 text-sm font-bold text-white shadow-lg shadow-[#FF5CA8]/30 hover:brightness-105 transition-all"
+            >
+              <FacebookIcon className="w-4 h-4" />
+              <span>Facebook</span>
+              <ExternalLink className="w-3.5 h-3.5 opacity-90" />
+            </a>
+            <a
+              href="https://www.youtube.com/@InkyPinkyCat"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#FF0033] to-[#D9002B] px-5 py-3 text-sm font-bold text-white shadow-lg shadow-[#FF0033]/25 hover:brightness-105 transition-all"
+            >
+              <YouTubeIcon className="w-4 h-4" />
+              <span>YouTube</span>
+              <ExternalLink className="w-3.5 h-3.5 opacity-90" />
+            </a>
+          </div>
           <button
             type="button"
             onClick={onClose}
-            className="inline-flex items-center justify-center rounded-full border-2 border-[#FFD6E9] bg-white px-5 py-3.5 text-sm font-bold text-[#6E3B56] hover:bg-[#FFF4F9] transition-colors cursor-pointer"
+            className="w-full inline-flex items-center justify-center rounded-full border-2 border-[#FFD6E9] bg-white px-5 py-3 text-sm font-bold text-[#6E3B56] hover:bg-[#FFF4F9] transition-colors cursor-pointer"
           >
             Got it!
           </button>

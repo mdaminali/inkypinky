@@ -1,4 +1,4 @@
-# Inky Pinky — Official Character Website 🩷
+# Inky Pinky — Official Character Website 💖
 
 A playful, responsive Next.js single-page website for **Pinky (Inky Pinky)**, the adorable fluffy bright-pink 3D animated kitten.
 
@@ -8,7 +8,8 @@ A playful, responsive Next.js single-page website for **Pinky (Inky Pinky)**, th
 - **Character Profile & Consistency Bible** detailing Pinky's appearance, personality traits, 3D visual style, and consistency rules.
 - **Social Links**:
   - **Facebook**: Live link to [fb.com/inkypinkycat](https://fb.com/inkypinkycat)
-  - **YouTube, Instagram & TikTok**: Interactive "Upcoming Soon!" modal with quick redirect to Facebook.
+  - **YouTube**: Live link to [youtube.com/@InkyPinkyCat](https://www.youtube.com/@InkyPinkyCat)
+  - **Instagram & TikTok**: Interactive "Upcoming Soon!" modal with quick redirects to Facebook & YouTube.
 - **Netlify-Ready Static Export**: Pre-configured with `output: "export"` in `next.config.ts` and `netlify.toml`.
 
 ## Run Locally

@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   description:
     "Official character page for Pinky (Inky Pinky), the adorable, playful, fluffy bright-pink 3D animated kitten bringing cute reels, dances, and adventures.",
   openGraph: {
-    title: "Inky Pinky — Meet Pinky 🩷",
+    title: "Inky Pinky — Meet Pinky 💖",
     description:
-      "Adorable, playful, fluffy pink kitten starring in cute Facebook & YouTube Reels. Follow Pinky at fb.com/inkypinkycat!",
+      "Adorable, playful, fluffy pink kitten starring in cute Facebook & YouTube Reels. Follow Pinky on Facebook (fb.com/inkypinkycat) & YouTube (@InkyPinkyCat)!",
     images: ["/media/cover.jpg"],
     type: "website",
   },

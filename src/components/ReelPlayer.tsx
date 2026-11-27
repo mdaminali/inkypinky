@@ -77,7 +77,7 @@ export function ReelPlayer() {
                   @inkypinkycat
                 </p>
                 <p className="text-xs text-pink-100/90">
-                  Playing &amp; dancing! 🩷✨
+                  Playing &amp; dancing! 💖✨
                 </p>
               </div>
               <button

@@ -25,7 +25,7 @@ import { ComingSoonModal, UpcomingPlatform } from "./ComingSoonModal";
 import { ReelPlayer } from "./ReelPlayer";
 
 const PERSONALITY_TRAITS = [
-  { label: "Cute", emoji: "🩷", desc: "Melts hearts with every blink and smile" },
+  { label: "Cute", emoji: "💖", desc: "Melts hearts with every blink and smile" },
   { label: "Cheerful", emoji: "✨", desc: "Always radiating bright, happy energy" },
   { label: "Funny", emoji: "😹", desc: "Loves making silly, expressive faces" },
   { label: "Playful", emoji: "🧶", desc: "Jumping, dancing, and chasing toys" },
@@ -110,7 +110,7 @@ export function InkyPinkyPage() {
                 Inky Pinky
               </span>
               <span className="text-xs font-bold text-[#E62884]">
-                Official Character Page 🩷
+                Official Character Page 💖
               </span>
             </div>
           </a>
@@ -136,16 +136,28 @@ export function InkyPinkyPage() {
             </a>
           </nav>
 
-          <a
-            href="https://fb.com/inkypinkycat"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#FF5CA8] to-[#E62884] px-4 py-2.5 text-sm font-bold text-white shadow-md shadow-[#FF5CA8]/30 hover:brightness-105 transition-all"
-          >
-            <FacebookIcon className="w-4 h-4" />
-            <span className="hidden sm:inline">Follow on Facebook</span>
-            <span className="sm:hidden">Facebook</span>
-          </a>
+          <div className="flex items-center gap-2">
+            <a
+              href="https://www.youtube.com/@InkyPinkyCat"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Subscribe on YouTube"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#FF0033] to-[#D9002B] px-3.5 py-2.5 text-sm font-bold text-white shadow-md shadow-[#FF0033]/25 hover:brightness-105 transition-all"
+            >
+              <YouTubeIcon className="w-4 h-4" />
+              <span className="hidden lg:inline">YouTube</span>
+            </a>
+            <a
+              href="https://fb.com/inkypinkycat"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#FF5CA8] to-[#E62884] px-4 py-2.5 text-sm font-bold text-white shadow-md shadow-[#FF5CA8]/30 hover:brightness-105 transition-all"
+            >
+              <FacebookIcon className="w-4 h-4" />
+              <span className="hidden sm:inline">Follow on Facebook</span>
+              <span className="sm:hidden">Facebook</span>
+            </a>
+          </div>
         </div>
       </header>
 
@@ -166,7 +178,7 @@ export function InkyPinkyPage() {
                   <span className="bg-gradient-to-r from-[#FF5CA8] via-[#E62884] to-[#FF4B9F] bg-clip-text text-transparent">
                     Pinky!
                   </span>{" "}
-                  <span aria-hidden="true">🩷</span>
+                  <span aria-hidden="true">💖</span>
                 </h1>
 
                 <p className="text-base sm:text-lg text-[#5C2342] leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
@@ -193,6 +205,19 @@ export function InkyPinkyPage() {
                   </a>
 
                   <a
+                    href="https://www.youtube.com/@InkyPinkyCat"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[#FF0033] to-[#D9002B] px-6 py-3.5 text-sm sm:text-base font-extrabold text-white shadow-xl shadow-[#FF0033]/25 hover:scale-[1.02] hover:brightness-105 transition-all"
+                  >
+                    <YouTubeIcon className="w-5 h-5" />
+                    <span>@InkyPinkyCat</span>
+                    <span className="rounded-full bg-white/20 px-2 py-0.5 text-[11px] uppercase tracking-wide">
+                      Live
+                    </span>
+                  </a>
+
+                  <a
                     href="#reel"
                     className="inline-flex items-center gap-2 rounded-full border-2 border-[#FF5CA8]/35 bg-white/90 px-6 py-3.5 text-sm sm:text-base font-extrabold text-[#E62884] hover:bg-[#FFF0F7] transition-colors"
                   >
@@ -203,18 +228,6 @@ export function InkyPinkyPage() {
 
                 {/* Quick Platform Links Row */}
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
-                  <button
-                    type="button"
-                    onClick={() => setUpcomingPlatform("youtube")}
-                    className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs sm:text-sm font-bold text-[#5C2342] border border-[#FF5CA8]/20 shadow-sm hover:border-[#FF5CA8] hover:text-[#D9002B] transition-all cursor-pointer"
-                  >
-                    <YouTubeIcon className="w-4 h-4 text-[#FF0033]" />
-                    <span>YouTube</span>
-                    <span className="rounded-full bg-[#FFF0F7] px-2 py-0.5 text-[10px] font-extrabold text-[#E62884]">
-                      Soon
-                    </span>
-                  </button>
-
                   <button
                     type="button"
                     onClick={() => setUpcomingPlatform("instagram")}
@@ -262,7 +275,7 @@ export function InkyPinkyPage() {
                     />
                     <div className="text-left">
                       <p className="font-display text-base font-bold text-[#3D112A] leading-tight">
-                        Pinky 🩷
+                        Pinky 💖
                       </p>
                       <p className="text-xs font-bold text-[#E62884]">
                         Sweet, Playful &amp; Curious
@@ -348,14 +361,16 @@ export function InkyPinkyPage() {
                       <span>Watch More Reels on Facebook</span>
                       <ExternalLink className="w-4 h-4" />
                     </a>
-                    <button
-                      type="button"
-                      onClick={() => setUpcomingPlatform("youtube")}
-                      className="inline-flex items-center gap-2 rounded-full border-2 border-[#FFD6E9] bg-white px-5 py-3.5 text-sm font-extrabold text-[#5C2342] hover:border-[#FF5CA8] hover:text-[#E62884] transition-colors cursor-pointer"
+                    <a
+                      href="https://www.youtube.com/@InkyPinkyCat"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#FF0033] to-[#D9002B] px-6 py-3.5 text-sm font-extrabold text-white shadow-lg shadow-[#FF0033]/25 hover:brightness-105 transition-all"
                     >
-                      <YouTubeIcon className="w-4 h-4 text-[#FF0033]" />
-                      <span>YouTube Shorts (Soon)</span>
-                    </button>
+                      <YouTubeIcon className="w-4 h-4" />
+                      <span>Watch on YouTube</span>
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -372,7 +387,7 @@ export function InkyPinkyPage() {
                 Character Profile
               </span>
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#3D112A] mb-3">
-                Everything About Pinky 🩷
+                Everything About Pinky 💖
               </h2>
               <p className="text-[#5C2342] text-base sm:text-lg">
                 Designed to be instantly recognizable, full of warmth, and
@@ -531,9 +546,9 @@ export function InkyPinkyPage() {
                 Join Pinky&apos;s Adventures Everywhere
               </h2>
               <p className="text-[#5C2342] text-base sm:text-lg">
-                Follow our official Facebook page today! YouTube, Instagram, and
-                TikTok pages are launching soon — click any platform to check
-                its status.
+                Follow our official Facebook and YouTube pages today! Instagram
+                and TikTok pages are launching soon — click any upcoming
+                platform to check its status.
               </p>
             </div>
 
@@ -568,33 +583,35 @@ export function InkyPinkyPage() {
                 </span>
               </a>
 
-              {/* YouTube — Upcoming Soon */}
-              <button
-                type="button"
-                onClick={() => setUpcomingPlatform("youtube")}
-                className="group text-left flex flex-col justify-between rounded-3xl pinky-card p-6 hover:-translate-y-1 hover:border-[#FF5CA8] transition-all cursor-pointer"
+              {/* YouTube — LIVE */}
+              <a
+                href="https://www.youtube.com/@InkyPinkyCat"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative flex flex-col justify-between rounded-3xl bg-gradient-to-br from-[#FF0033] to-[#D9002B] p-6 text-white shadow-xl shadow-[#FF0033]/25 hover:-translate-y-1 transition-all"
               >
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FF0033]/10 text-[#FF0033]">
+                    <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20 backdrop-blur-sm">
                       <YouTubeIcon className="w-6 h-6" />
                     </span>
-                    <span className="inline-flex items-center gap-1 rounded-full bg-[#FFF0F7] px-3 py-1 text-xs font-extrabold text-[#E62884]">
-                      <Clock className="w-3.5 h-3.5" />
-                      Upcoming Soon
+                    <span className="inline-flex items-center gap-1 rounded-full bg-white px-3 py-1 text-xs font-extrabold text-[#D9002B]">
+                      <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                      Live Now
                     </span>
                   </div>
-                  <h3 className="font-display text-2xl font-bold text-[#3D112A] mb-1">
+                  <h3 className="font-display text-2xl font-bold mb-1">
                     YouTube
                   </h3>
-                  <p className="text-sm text-[#6E3B56] mb-5">
-                    YouTube Shorts &amp; cute 3D episodes launching soon.
+                  <p className="text-sm text-rose-100 mb-5">
+                    youtube.com/@InkyPinkyCat
                   </p>
                 </div>
-                <span className="text-sm font-extrabold text-[#E62884] group-hover:underline">
-                  Check Launch Info →
+                <span className="inline-flex items-center gap-1.5 text-sm font-extrabold">
+                  <span>Visit Channel</span>
+                  <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                 </span>
-              </button>
+              </a>
 
               {/* Instagram — Upcoming Soon */}
               <button
@@ -667,7 +684,7 @@ export function InkyPinkyPage() {
             />
             <div>
               <p className="font-display text-base font-bold text-[#3D112A]">
-                Inky Pinky 🩷
+                Inky Pinky 💖
               </p>
               <p className="text-xs text-[#6E3B56]">
                 © {new Date().getFullYear()} Inky Pinky. All rights reserved.
@@ -685,14 +702,15 @@ export function InkyPinkyPage() {
             >
               <FacebookIcon className="w-4 h-4" />
             </a>
-            <button
-              type="button"
-              onClick={() => setUpcomingPlatform("youtube")}
-              aria-label="Inky Pinky on YouTube (Upcoming Soon)"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#FFF0F7] text-[#FF0033] hover:bg-[#FFD6E9] transition-colors cursor-pointer"
+            <a
+              href="https://www.youtube.com/@InkyPinkyCat"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Inky Pinky on YouTube"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#FF0033] text-white hover:bg-[#D9002B] transition-colors"
             >
               <YouTubeIcon className="w-4 h-4" />
-            </button>
+            </a>
             <button
               type="button"
               onClick={() => setUpcomingPlatform("instagram")}
@@ -713,7 +731,7 @@ export function InkyPinkyPage() {
         </div>
       </footer>
 
-      {/* Upcoming Soon Modal for YouTube, Instagram & TikTok */}
+      {/* Upcoming Soon Modal for Instagram & TikTok */}
       <ComingSoonModal
         platform={upcomingPlatform}
         onClose={() => setUpcomingPlatform(null)}
